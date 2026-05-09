@@ -8,4 +8,6 @@ In order to rapidly acheive approximations on lower-end hardware, this program n
 ## Dependencies
 This program is dependant on numpy, pyplot, scipy, and pynucastro. It uses rates from the JINA Reactlib Database included in pynucastro for the purpose.
 
+## Usage instructions
+The model uses a class based structure, initializing an object called MainphaseStar with a series of  arrays containing temperature by radius (in K), density by radius (g.m^-3), pressure by radius (N.m^-2), luminosity by radius (MeV), and percent hydrogen by radius, as well as an integer containing the total radius (m) Initial radial cells are assumed to be of uniform radial increments. The primary method for performing stellar evolution computations in the class is masssolve, which takes an input array of masses for which the system will be solved on. This will return a series of arrays that describe the structure of the star.
 
